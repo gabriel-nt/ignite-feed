@@ -3,7 +3,11 @@ import React from 'react';
 import { Avatar } from '../Avatar/Avatar';
 import styles from './Comment.module.css';
 
-export const Comment = () => {
+interface CommentProps {
+  comment: string;
+}
+
+export const Comment = ({ comment }: CommentProps) => {
   return (
     <div className={styles.comment}>
       <Avatar hasBorder={false} source="https://github.com/gabriel-nt.png" />
@@ -22,7 +26,7 @@ export const Comment = () => {
               <Trash size={24} />
             </button>
           </header>
-          <p>Muito bom</p>
+          <p>{comment}</p>
         </div>
         <footer>
           <button>

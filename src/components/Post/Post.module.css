@@ -106,7 +106,12 @@
   transition: background 0.2s;
 }
 
-.commentForm button:hover {
+.commentForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.commentForm button:not(:disabled):hover {
   background: var(--green-300);
 }
 

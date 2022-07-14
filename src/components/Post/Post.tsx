@@ -4,7 +4,7 @@ import { format, formatDistanceToNow } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 
 import styles from './Post.module.css';
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 
 interface PostProps {
   author: {
@@ -42,7 +42,9 @@ export const Post = ({ author, content, publishedAt }: PostProps) => {
     setNewCommentText('');
   };
 
-  const handleNewCommentInvalid = (event: ChangeEvent<HTMLTextAreaElement>) => {
+  const handleNewCommentInvalid = (
+    event: InvalidEvent<HTMLTextAreaElement>
+  ) => {
     event.target.setCustomValidity('Esse campo é obrigatório');
   };
 

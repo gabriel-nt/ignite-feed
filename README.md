@@ -8,7 +8,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/react%20version-18.0.1-informational"/>
-  <img src="https://img.shields.io/badge/last%20commit-july-blue" />
+  <img src="https://img.shields.io/badge/last%20commit-july-important" />
   <img src="https://img.shields.io/badge/license-MIT-success"/>
 </p>
 
@@ -24,7 +24,7 @@
 </h3>
 
 #### 💻 Demonstração
-<img src="https://github.com/gabriel-nt/ignite-list/blob/master/src/assets/cover.svg" alt="Imagem de demonstração" />
+<img src="https://github.com/gabriel-nt/ignite-feed/blob/master/src/assets/cover.png" alt="Imagem de demonstração" />
 
 ### ⚙ Pré-requisitos
 
